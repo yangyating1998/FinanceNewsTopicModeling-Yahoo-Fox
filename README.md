@@ -9,7 +9,7 @@ Script each article's detailed data: Title, Author, Time, and Content.
 Organize all materials to a DataFrame and save to a `csv.` file.
 
 # Package used
-from bs4 import `BeautifulSoup`\\
+from bs4 import `BeautifulSoup`\n
 import `requests`\\
 import `Pandas` as pd
 
