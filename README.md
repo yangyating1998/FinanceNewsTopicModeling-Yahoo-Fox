@@ -1,5 +1,5 @@
 # Scrap-data-from-Yahoo-Finance
-Scrap Financial News/Stories from Yahoo Finance.
+Scrap Financial News from Yahoo Finance.
 
 # Goal
 Scrap current posts from Yahoo Finance - Finance Module.
