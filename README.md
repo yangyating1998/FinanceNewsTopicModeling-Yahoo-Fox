@@ -16,4 +16,4 @@ import `requests`
 import `Pandas` as pd
 
 ## Output
-A `csv` file with today's all news info from Yahoo Finance.
+A dataframe with all current news from Yahoo Finance.
