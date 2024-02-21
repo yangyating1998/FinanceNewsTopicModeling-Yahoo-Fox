@@ -25,6 +25,8 @@ import `requests`
 
 import `Pandas` as pd
 
+import `numpy` as np
+
 ## Output
 Scrap-Yahoo: a dataframe with the most recent financial news from Yahoo Finance.
 
