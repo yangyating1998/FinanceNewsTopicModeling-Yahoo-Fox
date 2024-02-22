@@ -5,6 +5,6 @@ from scrap_yahoo import Yahoo_Scrap
 fox = Fox_Scrap()
 df_fox = fox.get_data()
 yahoo = Yahoo_Scrap()
-df_yahoo = yahoo.get_data()
 
+df_yahoo = yahoo.get_data()
 # What to be expected next: topic modeling and comparison
