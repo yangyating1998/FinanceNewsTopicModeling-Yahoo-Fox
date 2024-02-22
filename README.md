@@ -4,7 +4,7 @@ Analyzing and comparing topics extracted from up-to-date finance news sourced fr
 ## Scrap-data
 Use [scrap_yahoo](scrap_yahoo.py) to scrap Financial News from [Yahoo Finance](https://finance.yahoo.com/).
 
-Use [scrap_fox](scrap_fox.py) Scrap Financial News from [Fox Business](https://www.foxbusiness.com/).
+Use [scrap_fox](scrap_fox.py) to scrap Financial News from [Fox Business](https://www.foxbusiness.com/).
 
 ## Analysis
 
