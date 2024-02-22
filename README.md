@@ -8,9 +8,9 @@ Scrap Financial News from Fox Business https://www.foxbusiness.com/.
 
 ## Analysis
 
-### Topic Modeling and Comparison
+### [To be expected] Topic Modeling and Comparison
 
-### Sentiment Analysis and Comparison
+### [To be expected] Sentiment Analysis and Comparison
 
 ## Steps
 
