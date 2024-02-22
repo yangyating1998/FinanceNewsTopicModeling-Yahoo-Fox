@@ -6,7 +6,11 @@ Scrap Financial News from Yahoo Finance https://finance.yahoo.com/.
 
 Scrap Financial News from Fox Business https://www.foxbusiness.com/.
 
-## Topic Modeling and Comparison
+## Analysis
+
+### Topic Modeling and Comparison
+
+### Sentiment Analysis and Comparison
 
 ## Steps
 
