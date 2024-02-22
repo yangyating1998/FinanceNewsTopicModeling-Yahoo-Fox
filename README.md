@@ -1,10 +1,10 @@
 # Goal
 Analyzing and comparing topics extracted from up-to-date finance news sourced from both Yahoo and Fox.
 
-## Scrap-data-from-Yahoo-Finance
-Scrap Financial News from Yahoo Finance https://finance.yahoo.com/.
+## Scrap-data
+Use [scrap_yahoo](scrap_yahoo.py) to scrap Financial News from [Yahoo Finance](https://finance.yahoo.com/).
 
-Scrap Financial News from Fox Business https://www.foxbusiness.com/.
+Use [scrap_fox](scrap_fox.py) Scrap Financial News from [Fox Business](https://www.foxbusiness.com/).
 
 ## Analysis
 
