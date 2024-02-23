@@ -13,6 +13,7 @@ class Fox_Scrap: # Check naming convention
         fox_soup = BeautifulSoup(origin.text, features='html.parser')
         fox_articles = fox_soup.find_all('main')
         links = [a['href'] for div in fox_articles for a in div.find_all('a')]
+        print(links)
         return self.clean_data(links)
 
     # Get Title, Author, Posted Time, and Content (all paragraphs) from each valid link
@@ -20,9 +21,9 @@ class Fox_Scrap: # Check naming convention
         fox_data = []
 
         for link in np.unique(links):
-            if (self.url + 'markets' not in link) or (self.url + 'category' in link) or ('video' in link):
+            if ('category' in link) or ('video' in link) or ('foxnews' in link):
                 continue
-            print(link)
+            print(link) # check to see whether there are some new problems of news scraping
             fox_article = {}
 
             article_origin = requests.get(link)

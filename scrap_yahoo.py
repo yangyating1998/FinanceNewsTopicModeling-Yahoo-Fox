@@ -25,23 +25,26 @@ class Yahoo_Scrap: # Check naming convention
                 link = self.url + link
             if 'news' not in link:
                 continue
-
+            print(link) # check to see whether there are some new problems of news scraping
             yahoo_article = {}
 
             article_origin = requests.get(link)
             article_soup = BeautifulSoup(article_origin.text, features='html.parser')
             yahoo_article['title'] = article_soup.find('h1').text
-            yahoo_article['author'] = article_soup.find('div', class_='caas-attr-item-author').text
-            yahoo_article['post_time'] = article_soup.find('time').text
+            if article_soup.find('div', class_='caas-attr-item-author') is not None:
+                yahoo_article['author'] = article_soup.find('div', class_='caas-attr-item-author').text
+            if article_soup.find('div', class_='caas-attr-item-author') is not None:
+                yahoo_article['post_time'] = article_soup.find('time').text
 
             content = []
             body = article_soup.find('div', class_='caas-body')
-            paragraphs = body.find_all('p')
-            for paragraph in paragraphs:
-                content.append(paragraph.text.strip())
-            yahoo_article['content'] = ' '.join(content).strip()
+            if body is not None:
+                paragraphs = body.find_all('p')
+                for paragraph in paragraphs:
+                    content.append(paragraph.text.strip())
+                yahoo_article['content'] = ' '.join(content).strip()
 
-            yahoo_data.append(yahoo_article)
+                yahoo_data.append(yahoo_article)
 
         yahoo_df = pd.DataFrame(yahoo_data)
         return yahoo_df
