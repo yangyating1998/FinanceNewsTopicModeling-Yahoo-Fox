@@ -18,6 +18,6 @@ df_yahoo.to_csv('yahoo_{}.csv'.format(current_date))
 df_fox.to_csv('fox_{}.csv'.format(current_date))
 
 # Topic Modeling
-df = df_fox # please fill in the data you need
+df = pd.concat([df_yahoo, df_fox], axis=0) # replace with needed dataframe
 yahoo_model = TopicModeling(df)
 yahoo_model.topic_modeling()
