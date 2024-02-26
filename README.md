@@ -1,4 +1,4 @@
-# Goal
+# Objectives
 Analyzing topics extracted from up-to-date finance news sourced from both Yahoo and Fox.
 
 ## Scrap-data
